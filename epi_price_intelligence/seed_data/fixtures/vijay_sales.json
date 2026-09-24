@@ -1,0 +1,112 @@
+[
+  {
+    "product_name": "Apple iPhone 17 Pro 256 GB Deep Blue",
+    "brand": "Apple",
+    "model": "iPhone17 Pro",
+    "storage": "256GB",
+    "colour": "Deep Blue",
+    "sku": "VS-IP17P-256-DB",
+    "product_url": "https://www.vijaysales.com/p/apple-iphone-17-pro-256gb-deep-blue/400000001",
+    "image_url": "https://cdn.vijaysales.com/media/catalog/product/400000001.png",
+    "currency": "INR",
+    "mrp": 134900,
+    "selling_price": 127490,
+    "availability": "in_stock",
+    "seller": "Vijay Sales",
+    "rating": 4.5,
+    "review_count": 265,
+    "offers": [
+      {
+        "offer_text": "Instant discount of Rs. 5,000 on HSBC and HDFC Bank Credit Cards",
+        "offer_type": "bank_discount",
+        "bank": "HSBC",
+        "offer_discount": 5000,
+        "emi_available": false
+      },
+      {
+        "offer_text": "No Cost EMI on select bank cards for 3/6/9/12 months",
+        "offer_type": "no_cost_emi",
+        "emi_available": true,
+        "emi_tenure_months": 12,
+        "emi_rate_annual_pct": 0.0
+      }
+    ]
+  },
+  {
+    "product_name": "Apple iPhone-17-Pro 512gb Cosmic-Orange",
+    "brand": "Apple",
+    "model": "iPhone 17 Pro",
+    "storage": "512GB",
+    "colour": "Cosmic Orange",
+    "sku": "VS-IP17P-512-CO",
+    "product_url": "https://www.vijaysales.com/p/apple-iphone-17-pro-512gb-cosmic-orange/400000002",
+    "image_url": "https://cdn.vijaysales.com/media/catalog/product/400000002.png",
+    "currency": "INR",
+    "mrp": 154900,
+    "selling_price": 149990,
+    "availability": "in_stock",
+    "seller": "Vijay Sales",
+    "rating": 4.4,
+    "review_count": 98,
+    "offers": [
+      {
+        "offer_text": "Get up to Rs. 10,000 exchange bonus on your old phone",
+        "offer_type": "exchange",
+        "emi_available": false
+      }
+    ]
+  },
+  {
+    "product_name": "Apple iPhone 17 256GB Lavender",
+    "brand": "Apple",
+    "model": "iPhone 17",
+    "storage": "256GB",
+    "colour": "Lavender",
+    "sku": "VS-IP17-256-LV",
+    "product_url": "https://www.vijaysales.com/p/apple-iphone-17-256gb-lavender/400000003",
+    "image_url": "https://cdn.vijaysales.com/media/catalog/product/400000003.png",
+    "currency": "INR",
+    "mrp": 94900,
+    "selling_price": 91900,
+    "availability": "in_stock",
+    "seller": "Vijay Sales",
+    "rating": 4.6,
+    "review_count": 410,
+    "offers": [
+      {
+        "offer_text": "Flat 5% cashback up to Rs. 2,000 on Axis Bank Credit Cards",
+        "offer_type": "cashback",
+        "bank": "Axis",
+        "offer_discount": 2000,
+        "emi_available": false
+      }
+    ]
+  },
+  {
+    "product_name": "OnePlus 13 256GB Midnight Black",
+    "brand": "OnePlus",
+    "model": "OnePlus 13",
+    "storage": "256GB",
+    "colour": "Midnight Black",
+    "sku": "VS-OP13-256-MB",
+    "product_url": "https://www.vijaysales.com/p/oneplus-13-256gb-midnight-black/400000004",
+    "image_url": "https://cdn.vijaysales.com/media/catalog/product/400000004.png",
+    "currency": "INR",
+    "mrp": 69999,
+    "selling_price": 64999,
+    "availability": "in_stock",
+    "seller": "Vijay Sales",
+    "rating": 4.5,
+    "review_count": 610,
+    "offers": [
+      {
+        "offer_text": "No Cost EMI available up to 9 months on ICICI Bank",
+        "offer_type": "no_cost_emi",
+        "bank": "ICICI",
+        "emi_available": true,
+        "emi_tenure_months": 9,
+        "emi_rate_annual_pct": 0.0
+      }
+    ]
+  }
+]

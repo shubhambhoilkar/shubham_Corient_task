@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://epi_user:epi_pass@db:5432/epi
+      - SCRAPE_LIVE=false
+      - SECRET_KEY=change-me-in-production
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=epi_user
+      - POSTGRES_PASSWORD=epi_pass
+      - POSTGRES_DB=epi
+    volumes:
+      - epi_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U epi_user -d epi"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  epi_pgdata:

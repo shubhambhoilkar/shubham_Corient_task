@@ -1,0 +1,84 @@
+[
+  {
+    "product_name": "Apple iPhone 17 Pro (256 GB, Deep Blue)",
+    "brand": "Apple",
+    "model": "iPhone 17 Pro",
+    "storage": "256GB",
+    "colour": "Deep Blue",
+    "sku": "RD-IP17P-256-DB",
+    "product_url": "https://www.reliancedigital.in/product/apple-iphone-17-pro-256gb-deep-blue-500000001",
+    "image_url": "https://www.rdigitalcdn.com/products/500000001.png",
+    "currency": "INR",
+    "mrp": 134900,
+    "selling_price": 130490,
+    "availability": "in_stock",
+    "seller": "Reliance Digital",
+    "rating": 4.5,
+    "review_count": 190,
+    "offers": [
+      {
+        "offer_text": "Rs. 3,000 instant discount on SBI Bank Credit Cards",
+        "offer_type": "bank_discount",
+        "bank": "SBI",
+        "offer_discount": 3000,
+        "emi_available": false
+      },
+      {
+        "offer_text": "No Cost EMI available for 6/9/12 months on select cards",
+        "offer_type": "no_cost_emi",
+        "emi_available": true,
+        "emi_tenure_months": 12,
+        "emi_rate_annual_pct": 0.0
+      }
+    ]
+  },
+  {
+    "product_name": "Apple iPhone 17 Pro (512 GB, Cosmic Orange)",
+    "brand": "Apple",
+    "model": "iPhone 17 Pro",
+    "storage": "512GB",
+    "colour": "Cosmic Orange",
+    "sku": "RD-IP17P-512-CO",
+    "product_url": "https://www.reliancedigital.in/product/apple-iphone-17-pro-512gb-cosmic-orange-500000002",
+    "image_url": "https://www.rdigitalcdn.com/products/500000002.png",
+    "currency": "INR",
+    "mrp": 154900,
+    "selling_price": 151490,
+    "availability": "unknown",
+    "seller": "Reliance Digital",
+    "rating": 4.3,
+    "review_count": 71,
+    "offers": []
+  },
+  {
+    "product_name": "Apple iPhone 17 (256 GB, Lavender)",
+    "brand": "Apple",
+    "model": "iPhone 17",
+    "storage": "256GB",
+    "colour": "Lavender",
+    "sku": "RD-IP17-256-LV",
+    "product_url": "https://www.reliancedigital.in/product/apple-iphone-17-256gb-lavender-500000003",
+    "image_url": "https://www.rdigitalcdn.com/products/500000003.png",
+    "currency": "INR",
+    "mrp": 94900,
+    "selling_price": 90900,
+    "availability": "in_stock",
+    "seller": "Reliance Digital",
+    "rating": 4.6,
+    "review_count": 522,
+    "offers": [
+      {
+        "offer_text": "Get up to Rs. 8,000 off on exchange of your old smartphone",
+        "offer_type": "exchange",
+        "emi_available": false
+      },
+      {
+        "offer_text": "Flat Rs. 1,500 cashback on Kotak Bank Debit Cards",
+        "offer_type": "cashback",
+        "bank": "Kotak",
+        "offer_discount": 1500,
+        "emi_available": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "product_name": "Apple iPhone 17 Pro (256GB) - Deep Blue",
+    "brand": "Apple",
+    "model": "iPhone 17 Pro",
+    "storage": "256GB",
+    "colour": "Deep Blue",
+    "sku": "CROMA-IP17P-256-DB",
+    "product_url": "https://www.croma.com/apple-iphone-17-pro-256gb-deep-blue/p/300000001",
+    "image_url": "https://media.croma.com/image/upload/v1/media/product/300000001.png",
+    "currency": "INR",
+    "mrp": 134900,
+    "selling_price": 129490,
+    "availability": "in_stock",
+    "seller": "Croma",
+    "rating": 4.6,
+    "review_count": 812,
+    "offers": [
+      {
+        "offer_text": "Flat Rs. 4,000 instant discount on HDFC Bank Credit Cards",
+        "offer_type": "bank_discount",
+        "bank": "HDFC",
+        "offer_discount": 4000,
+        "emi_available": false
+      },
+      {
+        "offer_text": "No Cost EMI available on HDFC Bank, ICICI Bank and Axis Bank Credit Cards up to 12 months",
+        "offer_type": "no_cost_emi",
+        "emi_available": true,
+        "emi_tenure_months": 12,
+        "emi_rate_annual_pct": 0.0
+      },
+      {
+        "offer_text": "Get up to Rs. 12,000 as exchange bonus on select smartphones",
+        "offer_type": "exchange",
+        "emi_available": false
+      }
+    ]
+  },
+  {
+    "product_name": "Apple iPhone 17 Pro (512GB) - Cosmic Orange",
+    "brand": "Apple",
+    "model": "iPhone 17 Pro",
+    "storage": "512GB",
+    "colour": "Cosmic Orange",
+    "sku": "CROMA-IP17P-512-CO",
+    "product_url": "https://www.croma.com/apple-iphone-17-pro-512gb-cosmic-orange/p/300000002",
+    "image_url": "https://media.croma.com/image/upload/v1/media/product/300000002.png",
+    "currency": "INR",
+    "mrp": 154900,
+    "selling_price": 148490,
+    "availability": "in_stock",
+    "seller": "Croma",
+    "rating": 4.5,
+    "review_count": 340,
+    "offers": [
+      {
+        "offer_text": "Flat Rs. 4,000 instant discount on HDFC Bank Credit Cards",
+        "offer_type": "bank_discount",
+        "bank": "HDFC",
+        "offer_discount": 4000,
+        "emi_available": false
+      },
+      {
+        "offer_text": "No Cost EMI available up to 12 months",
+        "offer_type": "no_cost_emi",
+        "emi_available": true,
+        "emi_tenure_months": 12,
+        "emi_rate_annual_pct": 0.0
+      }
+    ]
+  },
+  {
+    "product_name": "Apple iPhone 17 (256GB) - Lavender",
+    "brand": "Apple",
+    "model": "iPhone 17",
+    "storage": "256GB",
+    "colour": "Lavender",
+    "sku": "CROMA-IP17-256-LV",
+    "product_url": "https://www.croma.com/apple-iphone-17-256gb-lavender/p/300000003",
+    "image_url": "https://media.croma.com/image/upload/v1/media/product/300000003.png",
+    "currency": "INR",
+    "mrp": 94900,
+    "selling_price": 89900,
+    "availability": "in_stock",
+    "seller": "Croma",
+    "rating": 4.7,
+    "review_count": 1204,
+    "offers": [
+      {
+        "offer_text": "10% instant discount up to Rs. 3,000 on ICICI Bank Credit Cards",
+        "offer_type": "bank_discount",
+        "bank": "ICICI",
+        "offer_discount": 3000,
+        "emi_available": false
+      }
+    ]
+  },
+  {
+    "product_name": "Samsung Galaxy S25 (256GB) - Titanium Black",
+    "brand": "Samsung",
+    "model": "Galaxy S25",
+    "storage": "256GB",
+    "colour": "Titanium Black",
+    "sku": "CROMA-GS25-256-TB",
+    "product_url": "https://www.croma.com/samsung-galaxy-s25-256gb-titanium-black/p/300000004",
+    "image_url": "https://media.croma.com/image/upload/v1/media/product/300000004.png",
+    "currency": "INR",
+    "mrp": 89999,
+    "selling_price": 79999,
+    "availability": "out_of_stock",
+    "seller": "Croma",
+    "rating": 4.4,
+    "review_count": 560,
+    "offers": [
+      {
+        "offer_text": "Flat Rs. 5,000 off on exchange of any old smartphone",
+        "offer_type": "exchange",
+        "emi_available": false
+      }
+    ]
+  }
+]

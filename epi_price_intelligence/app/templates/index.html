@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Price Intelligence — Smartphones</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">◈</span>
+        <span class="brand-name">Price Intelligence</span>
+      </div>
+      <span class="brand-sub">Smartphone deal comparison across retailers</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="search-panel" aria-label="Search">
+      <form id="search-form">
+        <div class="field field-wide">
+          <label for="query">Mobile model</label>
+          <input id="query" name="query" type="text" placeholder="e.g. iPhone 17 Pro" required>
+        </div>
+        <div class="field">
+          <label for="storage">Storage</label>
+          <select id="storage" name="storage">
+            <option value="">Any</option>
+            <option>128GB</option>
+            <option>256GB</option>
+            <option>512GB</option>
+            <option>1TB</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="colour">Colour</label>
+          <input id="colour" name="colour" type="text" placeholder="Any">
+        </div>
+        <div class="field">
+          <label for="budget_min">Budget min (₹)</label>
+          <input id="budget_min" name="budget_min" type="number" min="0" step="1000">
+        </div>
+        <div class="field">
+          <label for="budget_max">Budget max (₹)</label>
+          <input id="budget_max" name="budget_max" type="number" min="0" step="1000">
+        </div>
+        <div class="field">
+          <label for="tenure">EMI tenure</label>
+          <select id="tenure" name="tenure">
+            <option value="6">6 months</option>
+            <option value="12" selected>12 months</option>
+            <option value="18">18 months</option>
+            <option value="24">24 months</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="down_payment">Down payment (₹)</label>
+          <input id="down_payment" name="down_payment" type="number" min="0" step="1000" value="0">
+        </div>
+        <div class="field field-action">
+          <button type="submit" id="search-btn">Compare prices</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="status" class="status" hidden></section>
+
+    <section id="recommendation" class="recommendation" hidden></section>
+
+    <section id="results-section" hidden>
+      <h2 class="section-title">Comparison</h2>
+      <div class="table-wrap">
+        <table id="results-table">
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Product / Variant</th>
+              <th>Listed price</th>
+              <th>Offer</th>
+              <th>Effective price</th>
+              <th>EMI (selected tenure)</th>
+              <th>Availability</th>
+              <th>Deal score</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+      <p class="footnote" id="crawl-meta"></p>
+    </section>
+
+    <section id="empty-state" class="empty-state">
+      <p>Enter a mobile model above to pull live comparisons from Croma, Vijay Sales and Reliance Digital.</p>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
