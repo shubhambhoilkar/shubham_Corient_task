@@ -77,10 +77,16 @@ async function renderResults(results, tenure, downPayment) {
     const availClass = r.availability || "unknown";
     const emi = await fetchEmi(r.id, tenure, downPayment);
     const emiText = emi && !emi.error ? `${inr(emi.monthly_emi)}/mo` : "—";
+    // product is embedded directly on every result row now -- no per-row /api/product
+    // round trip needed to show name/storage/colour.
+    const product = r.product || {};
+    const productLabel = [product.product_name, product.storage, product.colour]
+      .filter(Boolean)
+      .join(" · ");
 
     tr.innerHTML = `
       <td>${r.source.replace("_", " ")}</td>
-      <td>${r.product_id_name || ""}${r.sku ? `<div class="offer-text">SKU: ${r.sku}</div>` : ""}</td>
+      <td>${productLabel}${r.sku ? `<div class="offer-text">SKU: ${r.sku}</div>` : ""}</td>
       <td class="price">${inr(r.selling_price)}${r.mrp && r.mrp > r.selling_price ? `<span class="price-strike">${inr(r.mrp)}</span>` : ""}</td>
       <td class="offer-text">${offerTexts}</td>
       <td class="price">${inr(r.effective_price)}</td>
@@ -124,27 +130,8 @@ form.addEventListener("submit", async (e) => {
       return;
     }
 
-    // attach a display name per listing (fetched product map isn't inlined per-row by the API)
-    const productNameById = {};
-    for (const l of data.results) {
-      if (!productNameById[l.product_id]) {
-        productNameById[l.product_id] = null;
-      }
-    }
-    // fetch product names for the small set of distinct product ids in this result
-    await Promise.all(
-      Object.keys(productNameById).map(async (pid) => {
-        const r = await fetch(`/api/product/${pid}`);
-        if (r.ok) {
-          const p = await r.json();
-          productNameById[pid] = `${p.product_name}${p.storage ? " · " + p.storage : ""}${p.colour ? " · " + p.colour : ""}`;
-        }
-      })
-    );
-    for (const l of data.results) {
-      l.product_id_name = productNameById[l.product_id] || "";
-    }
-
+    // product info now arrives embedded on every result row (see renderResults) --
+    // no extra /api/product round trips needed to build the table.
     const failures = data.partial_failures || [];
     if (failures.length) {
       setStatus(`Completed with partial results — ${failures.map(f => f.source).join(", ")} had issues.`);
