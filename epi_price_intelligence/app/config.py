@@ -1,4 +1,5 @@
 import os
+import secrets
 
 
 def _bool(name: str, default: str = "false") -> bool:
@@ -6,7 +7,12 @@ def _bool(name: str, default: str = "false") -> bool:
 
 
 class Config:
-    SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key")
+    # No hardcoded fallback secret. A checked-in default like "dev-secret-key" is itself a
+    # known, guessable secret the moment it's public (which it is, in this repo) -- that
+    # defeats the purpose of having one. If SECRET_KEY isn't set, app/__init__.py either
+    # generates a random ephemeral one (development) or refuses to start (production);
+    # see create_app() for that logic. Never add a literal default back here.
+    SECRET_KEY = os.getenv("SECRET_KEY")
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL", "sqlite:///epi.db")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ENGINE_OPTIONS = {"pool_pre_ping": True}
